@@ -1,0 +1,70 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "bb-component-slider",
+    "friendlyName": "bb-component-slider",
+    "description": "Slider Component",
+    "icon": "123",
+    "styles": ["padding", "size", "background", "border"],
+    "requiredAncestors": ["form"],
+    "editable": true,
+    "size": {
+      "width": 400,
+      "height": 50
+    },
+    "settings": [
+      {
+        "type": "field/number",
+        "key": "field",
+        "label": "Field",
+        "required": true
+      },
+      {
+        "type": "text",
+        "key": "label",
+        "label": "Label"
+      },
+      {
+        "type": "boolean",
+        "key": "showLabel",
+        "label": "Show Label",
+        "defaultValue": true
+      },
+      {
+        "type": "text",
+        "key": "defaultValue",
+        "label": "Default Value",
+        "defaultValue": "0"
+      },
+      {
+        "type": "text",
+        "key": "min",
+        "label": "Min Value",
+        "defaultValue": "0"
+      },
+      {
+        "type": "text",
+        "key": "max",
+        "label": "Max Value",
+        "defaultValue": "100"
+      },
+      {
+        "type": "text",
+        "key": "step",
+        "label": "Step",
+        "defaultValue": "1"
+      },
+      {
+        "type": "boolean",
+        "key": "disabled",
+        "label": "Disabled"
+      },
+      {
+        "type": "validation/number",
+        "label": "Validation",
+        "key": "validation"
+      }
+    ]
+  }
+}

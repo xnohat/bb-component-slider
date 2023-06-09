@@ -1,0 +1,25 @@
+version: "3"
+services:
+  budibase:
+    restart: unless-stopped
+    image: budibase/budibase:latest
+    ports:
+      - 10001:80
+    environment:
+      API_ENCRYPTION_KEY: XOgaU4vrWt6LYeuGVrl7LNUwNIEBGx0y
+      JWT_SECRET: neLBP8gh0wbV1xS37a9Fma6iMuvWWCSU
+      MINIO_ACCESS_KEY: e6cdVUK5HZ2s1x2tbKh1cNtRJVcBgzSP
+      MINIO_SECRET_KEY: 7H1LtH3Q00vn6VY9yKFzRkKbKhoTvQHV
+      REDIS_PASSWORD: 8Is37jWl49XPHzmQlq81nK4uKjqYyN9R
+      INTERNAL_API_KEY: u4gosCEtIHSHfx5NIz1gzyvEatOEe2jv
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: CIy6mS3nkORWLwWihwiTPvayJTkqyB2G
+      PLUGINS_DIR: /plugins
+      BB_ADMIN_USER_EMAIL: admin@admin.com
+      BB_ADMIN_USER_PASSWORD: admin
+    volumes:
+      - budibase_data:/data
+      - /home/xnohat/bb-component-slider:/plugins
+volumes:
+  budibase_data:
+    driver: local
