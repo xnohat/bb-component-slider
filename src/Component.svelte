@@ -75,17 +75,17 @@
 {:else}
   <div use:styleable={$component.styles}>
     <div class="spectrum-Slider-labelContainer">
-      <label class="spectrum-Slider-label" id="spectrum-Slider-label-8" for="spectrum-Slider-input-8">
+      <label class="spectrum-Slider-label" id="spectrum-Slider-label-10" for="spectrum-Slider-input-10">
           {#if showLabel}
               {label}
           {/if}                
       </label>
-      <div class="spectrum-Slider-value" role="textbox" aria-readonly="true" aria-labelledby="spectrum-Slider-label-8">{value}</div>
+      <div class="spectrum-Slider-value" role="textbox" aria-readonly="true" aria-labelledby="spectrum-Slider-label-10">{value}</div>
     </div>
     {#if showLabel}
-      <Slider id="spectrum-Slider-input-8" error={error} disabled={disabled} min={parseFloat(min)} max={parseFloat(max)} step={parseFloat(step)} value={value} on:change={handleChange}/>
+      <Slider id="spectrum-Slider-input-10" error={error} disabled={disabled} min={parseFloat(min)} max={parseFloat(max)} step={parseFloat(step)} value={value} on:change={handleChange}/>
     {:else}
-      <Slider id="spectrum-Slider-input-8" label={label} labelPosition={labelPos} error={error} disabled={disabled} min={parseFloat(min)} max={parseFloat(max)} step={parseFloat(step)} value={value} on:change={handleChange}/>
+      <Slider id="spectrum-Slider-input-10" label={label} labelPosition={labelPos} error={error} disabled={disabled} min={parseFloat(min)} max={parseFloat(max)} step={parseFloat(step)} value={value} on:change={handleChange}/>
     {/if}
   </div>
 {/if}
